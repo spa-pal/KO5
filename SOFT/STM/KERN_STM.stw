@@ -1,0 +1,16 @@
+;	STMicroelectronics Workspace file
+
+[Version]
+Keyword=ST7Workspace-V0.7
+
+[Project0]
+Filename=kern_stm_1.stp
+Dependencies=
+
+[Project1]
+Filename=..\..\..\..\fat32\soft\fat32_4\fat32_4.stp
+Dependencies=
+[Options]
+ActiveProject=Kern_STM_1
+ActiveConfig=Debug
+AddSortedElements=0

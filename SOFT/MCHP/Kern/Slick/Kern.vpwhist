@@ -1,0 +1,53 @@
+[Global]
+CurrentProject=Kern.vpj
+[ProjectDates]
+Kern.vpj=20121004005429098
+[TreeExpansion2]
+- Kern.vpj
+  - Source Files
+    - NvRAM
+    + TcpIp
+  - Header Files
+    + Common
+    + TcpIp Stack
+  + Resource Files
+  + Bitmaps
+  + Other Files
+scroll:0
+[State]
+SCREEN: 1280 1024 269 110 960 718 0 0 M 0 0 0 0 1253 631 0
+CWD: ..\..\Kern
+BUFFER: BN="..\..\Microchip\Include\TCPIP Stack\SNMP.h"
+BI: MA=1 80 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=96 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.9545 CL=13 LE=0 CX=13 CY=18 WI=5 BI=31 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="..\CustomSNMPApp.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=1049184 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.7947 CL=47 LE=0 CX=47 CY=15 WI=5 BI=29 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="..\..\Microchip\TCPIP Stack\SNMP.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=1179744 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.25439 CL=28 LE=0 CX=28 CY=18 WI=5 BI=22 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 971 441 -1 -1 N  WF=0 WT=1 ",,,"
+BUFFER: BN="..\..\Microchip\Include\TCPIP Stack\SNMP.h"
+VIEW: LN=.9545 CL=13 LE=0 CX=13 CY=18 WI=123 BI=31 HT=0 HN=0 HF=0 HC=4
+WINDOW: 124 336 799 411 -1 -1 N  WF=0 WT=3 ",,,"
+BUFFER: BN="..\CustomSNMPApp.c"
+VIEW: LN=.7947 CL=47 LE=0 CX=47 CY=15 WI=140 BI=29 HT=0 HN=0 HF=0 HC=4
+WINDOW: 112 165 799 411 -1 -1 M  WF=0 WT=2 ",,,"
+BUFFER: BN="..\..\Microchip\TCPIP Stack\SNMP.c"
+VIEW: LN=.24719 CL=3 LE=0 CX=3 CY=19 WI=124 BI=22 HT=0 HN=0 HF=0 HC=4
+FILEHIST: 9
+..\..\Microchip\TCPIP Stack\TCP.c
+..\CustomHTTPApp.c
+..\DeviceData.c
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\INCLUDE\string.h
+..\DeviceData.h
+\Kern_v2\Kern\Main.c
+..\..\Microchip\Include\TCPIP Stack\SNMP.h
+..\CustomSNMPApp.c
+..\..\Microchip\TCPIP Stack\SNMP.c
+DEBUG: 0 0 0 0 3 0 gdb
+printf
+strcpy
+std::*
+DEBUG2: 0
+TBCLASS: 0 0

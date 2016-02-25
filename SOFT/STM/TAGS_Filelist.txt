@@ -1,0 +1,12 @@
+main.c
+pal_uart.c
+power_cnt.c
+stm8_interrupt_vector.c
+cmd.c
+stm8s.h
+c:\program files\cosmic\cxstm8_32k\hstm8\iostm8s105.h
+c:\program files\cosmic\cxstm8_32k\hstm8\mods.h
+main.h
+pal_uart.h
+power_cnt.h
+stm8s_type.h

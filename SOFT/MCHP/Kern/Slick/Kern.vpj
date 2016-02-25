@@ -1,0 +1,275 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+	Version="10.0"
+	VendorName="SlickEdit"
+	WorkingDir="../">
+	<Config
+		Name="Debug"
+		Type="cpp"
+		DebugCallbackName="gdb"
+		OutputFile="%bdCheapLan"
+		CompilerConfigName="Latest Version">
+		<Menu>
+			<Target
+				Name="Compile"
+				MenuCaption="&amp;Compile"
+				CaptureOutputWith="ProcessBuffer"
+				OutputExts="*.o"
+				SaveOption="SaveCurrent"
+				RunFromDir="%rw">
+				<Exec CmdLine='cc -c -g %i %defd -o "%bd%n.o" "%f"'/>
+			</Target>
+			<Target
+				Name="Link"
+				MenuCaption="&amp;Link">
+				<Exec CmdLine='cc -g -o "%o" %f %libs'/>
+			</Target>
+			<Target
+				Name="Build"
+				MenuCaption="&amp;Build"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="%rw">
+				<Exec CmdLine='"%(VSLICKBIN1)vsbuild" build "%w" "%r"'/>
+			</Target>
+			<Target
+				Name="Rebuild"
+				MenuCaption="&amp;Rebuild"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="%rw">
+				<Exec CmdLine='"%(VSLICKBIN1)vsbuild" rebuild "%w" "%r"'/>
+			</Target>
+			<Target
+				Name="Debug"
+				MenuCaption="&amp;Debug"
+				SaveOption="SaveNone"
+				BuildFirst="1"
+				CaptureOutputWith="ProcessBuffer"
+				RunFromDir="%rw">
+				<Exec CmdLine='vsdebugio -prog "%o"'/>
+			</Target>
+			<Target
+				Name="Execute"
+				MenuCaption="E&amp;xecute"
+				SaveOption="SaveNone"
+				BuildFirst="1"
+				CaptureOutputWith="ProcessBuffer"
+				RunFromDir="%rw">
+				<Exec CmdLine='"%o"'/>
+			</Target>
+		</Menu>
+	</Config>
+	<Config
+		Name="Release"
+		Type="cpp"
+		DebugCallbackName="gdb"
+		OutputFile="%bdCheapLan"
+		CompilerConfigName="Latest Version">
+		<Menu>
+			<Target
+				Name="Compile"
+				MenuCaption="&amp;Compile"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveCurrent"
+				OutputExts="*.o"
+				RunFromDir="%rw">
+				<Exec CmdLine='cc -c -O %i %defd -o "%bd%n.o" "%f"'/>
+			</Target>
+			<Target
+				Name="Link"
+				MenuCaption="&amp;Link">
+				<Exec CmdLine='cc -O -o "%o" %f %libs'/>
+			</Target>
+			<Target
+				Name="Build"
+				MenuCaption="&amp;Build"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="%rw">
+				<Exec CmdLine='"%(VSLICKBIN1)vsbuild" build "%w" "%r"'/>
+			</Target>
+			<Target
+				Name="Rebuild"
+				MenuCaption="&amp;Rebuild"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="%rw">
+				<Exec CmdLine='"%(VSLICKBIN1)vsbuild" rebuild "%w" "%r"'/>
+			</Target>
+			<Target
+				Name="Debug"
+				MenuCaption="&amp;Debug"
+				SaveOption="SaveNone"
+				BuildFirst="1"
+				CaptureOutputWith="ProcessBuffer"
+				RunFromDir="%rw">
+				<Exec CmdLine='vsdebugio -prog "%o"'/>
+			</Target>
+			<Target
+				Name="Execute"
+				MenuCaption="E&amp;xecute"
+				SaveOption="SaveNone"
+				BuildFirst="1"
+				CaptureOutputWith="ProcessBuffer"
+				RunFromDir="%rw">
+				<Exec CmdLine='"%o"'/>
+			</Target>
+		</Menu>
+	</Config>
+	<Rules Name="Compile">
+		<Rule
+			InputExts="*.s"
+			OutputExts="*.o"
+			LinkObject="1">
+			<Exec CmdLine='as -o "%bd%n.o" "%f"'/>
+		</Rule>
+	</Rules>
+	<Files>
+		<Folder
+			Name="Source Files"
+			Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d">
+			<Folder
+				Name="NvRAM"
+				Filters="">
+				<F N="../ParamsList.c"/>
+				<F N="../ParamsTable.c"/>
+			</Folder>
+			<Folder
+				Name="TcpIp"
+				Filters="">
+				<F N="../../Microchip/TCPIP Stack/Announce.c"/>
+				<F N="../../Microchip/TCPIP Stack/ARP.c"/>
+				<F N="../../Microchip/TCPIP Stack/AutoIP.c"/>
+				<F N="../../Microchip/TCPIP Stack/BigInt.c"/>
+				<F N="../../Microchip/TCPIP Stack/Delay.c"/>
+				<F N="../../Microchip/TCPIP Stack/DHCP.c"/>
+				<F N="../../Microchip/TCPIP Stack/DHCPs.c"/>
+				<F N="../../Microchip/TCPIP Stack/DNS.c"/>
+				<F N="../../Microchip/TCPIP Stack/DNSs.c"/>
+				<F N="../../Microchip/TCPIP Stack/DynDNS.c"/>
+				<F N="../../Microchip/TCPIP Stack/ENC28J60.c"/>
+				<F N="../../Microchip/TCPIP Stack/ENCX24J600.c"/>
+				<F N="../../Microchip/TCPIP Stack/ETH97J60.c"/>
+				<F N="../../Microchip/TCPIP Stack/FileSystem.c"/>
+				<F N="../../Microchip/TCPIP Stack/FTP.c"/>
+				<F N="../../Microchip/TCPIP Stack/Hashes.c"/>
+				<F N="../../Microchip/TCPIP Stack/Helpers.c"/>
+				<F N="../../Microchip/TCPIP Stack/HTTP.c"/>
+				<F N="../../Microchip/TCPIP Stack/HTTP2.c"/>
+				<F N="../../Microchip/TCPIP Stack/ICMP.c"/>
+				<F N="../../Microchip/TCPIP Stack/IP.c"/>
+				<F N="../../Microchip/TCPIP Stack/MPFS.c"/>
+				<F N="../../Microchip/TCPIP Stack/MPFS2.c"/>
+				<F N="../../Microchip/TCPIP Stack/NBNS.c"/>
+				<F N="../../Microchip/TCPIP Stack/Reboot.c"/>
+				<F N="../../Microchip/TCPIP Stack/SMTP.c"/>
+				<F N="../../Microchip/TCPIP Stack/SNMP.c"/>
+				<F N="../../Microchip/TCPIP Stack/SNTP.c"/>
+				<F N="../../Microchip/TCPIP Stack/SPIEEPROM.c"/>
+				<F N="../../Microchip/TCPIP Stack/SPIFlash.c"/>
+				<F N="../../Microchip/TCPIP Stack/SPIRAM.c"/>
+				<F N="../../Microchip/TCPIP Stack/StackTsk.c"/>
+				<F N="../../Microchip/TCPIP Stack/TCP.c"/>
+				<F N="../../Microchip/TCPIP Stack/TCPPerformanceTest.c"/>
+				<F N="../../Microchip/TCPIP Stack/Telnet.c"/>
+				<F N="../../Microchip/TCPIP Stack/TFTPc.c"/>
+				<F N="../../Microchip/TCPIP Stack/Tick.c"/>
+				<F N="../../Microchip/TCPIP Stack/UART.c"/>
+				<F N="../../Microchip/TCPIP Stack/UART2TCPBridge.c"/>
+				<F N="../../Microchip/TCPIP Stack/UDP.c"/>
+				<F N="../../Microchip/TCPIP Stack/UDPPerformanceTest.c"/>
+			</Folder>
+			<F N="../CustomHTTPApp.c"/>
+			<F N="../CustomSNMPApp.c"/>
+			<F N="../deeprom.c"/>
+			<F N="../DeviceData.c"/>
+			<F N="../I2cEEPROM.c"/>
+			<F N="../Main.c"/>
+			<F N="../PAL_pUART.c"/>
+			<F N="../UdpSet.c"/>
+		</Folder>
+		<Folder
+			Name="Header Files"
+			Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.inc;*.sh;*.cpy;*.if">
+			<Folder
+				Name="Common"
+				Filters="">
+				<F N="../../Microchip/Include/Compiler.h"/>
+				<F N="../../Microchip/Include/GenericTypeDefs.h"/>
+				<F N="C:/Program Files (x86)/Microchip/mplabc18/v3.41/h/p18f67j60.h"/>
+			</Folder>
+			<Folder
+				Name="TcpIp Stack"
+				Filters="">
+				<F N="../../Microchip/Include/TCPIP Stack/_HTTP2.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/Announce.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/ARCFOUR.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/ARP.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/AutoIP.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/BigInt.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/Delay.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/DHCP.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/DNS.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/DynDNS.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/ENC28J60.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/ETH97J60.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/FileSystem.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/FTP.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/HardwareProfileTemplate.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/Hashes.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/Helpers.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/HTTP.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/HTTP2.h"/>
+				<F N="../HTTPPrint.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/ICMP.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/IP.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/MAC.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/MPFS.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/MPFS2.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/NBNS.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/Random.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/Reboot.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/regdef.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/SMTP.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/SNMP.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/SNTP.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/SPIFlash.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/SPIRAM.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/StackTsk.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/TCP.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/TCPIP.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/TCPIPConfigTemplate.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/TCPPerformanceTest.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/Telnet.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/TFTPc.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/Tick.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/UART.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/UART2TCPBridge.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/UDP.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/UDPPerformanceTest.h"/>
+				<F N="../../Microchip/Include/TCPIP Stack/XEEPROM.h"/>
+			</Folder>
+			<F N="../deeprom.h"/>
+			<F N="../DeviceData.h"/>
+			<F N="../Alternative Configurations/HardwareProfile_Kern.h"/>
+			<F N="../HTTPApp.h"/>
+			<F N="../I2cEEPROM.h"/>
+			<F N="../Main.h"/>
+			<F N="../mib.h"/>
+			<F N="../PAL_pUART.h"/>
+			<F N="../ParamList.h"/>
+			<F N="../Alternative Configurations/TCPIPConfig_Kern.h"/>
+			<F N="../UdpSet.h"/>
+		</Folder>
+		<Folder
+			Name="Resource Files"
+			Filters="*.ico;*.cur;*.dlg"/>
+		<Folder
+			Name="Bitmaps"
+			Filters="*.bmp"/>
+		<Folder
+			Name="Other Files"
+			Filters=""/>
+	</Files>
+</Project>

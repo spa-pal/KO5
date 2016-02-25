@@ -1,0 +1,654 @@
+----------------------------------------------------------
+new log session
+date:				02/22/12
+time:				23:18:30
+----------------------------------------------------------
+> Loading file E:\Users\Pal\DEVICES\FAT32\SOFT\fat32_4\Debug\fat32_4_opt.s19 in OPTION BYTE area  ...
+< File successfully loaded. File Checksum 0x2
+> Loading file E:\Users\Pal\DEVICES\FAT32\SOFT\fat32_4\Debug\fat32_4.s19 in PROGRAM MEMORY area  ...
+FILE : line 142: Address 0x4000 is out of range and is ignored!
+FILE : line 142: Address 0x4001 is out of range and is ignored!
+< File successfully loaded. File Checksum 0x6E740
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Loading file E:\Users\Pal\DEVICES\FAT32\SOFT\fat32_4\Debug\fat32_4.s19 in PROGRAM MEMORY area  ...
+FILE : line 142: Address 0x4000 is out of range and is ignored!
+FILE : line 142: Address 0x4001 is out of range and is ignored!
+< File successfully loaded. File Checksum 0x6E6F5
+----------------------------------------------------------
+new log session
+date:				02/22/12
+time:				23:54:57
+----------------------------------------------------------
+> Loading file E:\Users\Pal\DEVICES\FAT32\SOFT\fat32_4\Debug\fat32_4_opt.s19 in OPTION BYTE area  ...
+< File successfully loaded. File Checksum 0x2
+> Loading file E:\Users\Pal\DEVICES\FAT32\SOFT\fat32_4\Debug\fat32_4.s19 in PROGRAM MEMORY area  ...
+FILE : line 142: Address 0x4000 is out of range and is ignored!
+FILE : line 142: Address 0x4001 is out of range and is ignored!
+< File successfully loaded. File Checksum 0x6E6F5
+> Programming  PROGRAM MEMORY area...
+Cannot communicate with the device !
+Check the SWIM cable connection and check all the needed pin connections on the SWIM connector.
+
+If the application code uses Swim Disable and Reset pin as Output or has disabled SWIM Clock Divider:
+Try Now to SWITCH OFF and ON the application Power Supply while NRST Reset pin is forced low.
+
+< PROGRAM MEMORY programming failed.
+< Operation aborted.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Loading file E:\Users\Pal\DEVICES\FAT32\SOFT\fat32_4\Debug\fat32_4.s19 in PROGRAM MEMORY area  ...
+FILE : line 142: Address 0x4000 is out of range and is ignored!
+FILE : line 142: Address 0x4001 is out of range and is ignored!
+< File successfully loaded. File Checksum 0x6E656
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Loading file E:\Users\Pal\DEVICES\FAT32\SOFT\fat32_4\Debug\fat32_4.s19 in PROGRAM MEMORY area  ...
+FILE : line 142: Address 0x4000 is out of range and is ignored!
+FILE : line 142: Address 0x4001 is out of range and is ignored!
+< File successfully loaded. File Checksum 0x6E6F5
+> Programming  PROGRAM MEMORY area...
+Cannot communicate with the device !
+Check the SWIM cable connection and check all the needed pin connections on the SWIM connector.
+
+If the application code uses Swim Disable and Reset pin as Output or has disabled SWIM Clock Divider:
+Try Now to SWITCH OFF and ON the application Power Supply while NRST Reset pin is forced low.
+
+< PROGRAM MEMORY programming failed.
+< Operation aborted.
+> Programming  PROGRAM MEMORY area...
+Cannot communicate with the device !
+Check the SWIM cable connection and check all the needed pin connections on the SWIM connector.
+
+If the application code uses Swim Disable and Reset pin as Output or has disabled SWIM Clock Divider:
+Try Now to SWITCH OFF and ON the application Power Supply while NRST Reset pin is forced low.
+
+< PROGRAM MEMORY programming failed.
+< Operation aborted.
+> Programming  PROGRAM MEMORY area...
+Cannot communicate with the device !
+Check the SWIM cable connection and check all the needed pin connections on the SWIM connector.
+
+If the application code uses Swim Disable and Reset pin as Output or has disabled SWIM Clock Divider:
+Try Now to SWITCH OFF and ON the application Power Supply while NRST Reset pin is forced low.
+
+< PROGRAM MEMORY programming failed.
+< Operation aborted.
+> Programming  PROGRAM MEMORY area...
+Cannot communicate with the device !
+Check the SWIM cable connection and check all the needed pin connections on the SWIM connector.
+
+If the application code uses Swim Disable and Reset pin as Output or has disabled SWIM Clock Divider:
+Try Now to SWITCH OFF and ON the application Power Supply while NRST Reset pin is forced low.
+
+< PROGRAM MEMORY programming failed.
+< Operation aborted.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Loading file E:\Users\Pal\DEVICES\FAT32\SOFT\fat32_4\Debug\fat32_4.s19 in PROGRAM MEMORY area  ...
+FILE : line 142: Address 0x4000 is out of range and is ignored!
+FILE : line 142: Address 0x4001 is out of range and is ignored!
+< File successfully loaded. File Checksum 0x6E5C6
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Loading file E:\Users\Pal\DEVICES\FAT32\SOFT\fat32_4\Debug\fat32_4.s19 in PROGRAM MEMORY area  ...
+FILE : line 142: Address 0x4000 is out of range and is ignored!
+FILE : line 142: Address 0x4001 is out of range and is ignored!
+< File successfully loaded. File Checksum 0x6E521
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cannot communicate with the device !
+Check the SWIM cable connection and check all the needed pin connections on the SWIM connector.
+
+If the application code uses Swim Disable and Reset pin as Output or has disabled SWIM Clock Divider:
+Try Now to SWITCH OFF and ON the application Power Supply while NRST Reset pin is forced low.
+
+< PROGRAM MEMORY programming failed.
+< Operation aborted.
+> Programming  PROGRAM MEMORY area...
+Cannot communicate with the device !
+Check the SWIM cable connection and check all the needed pin connections on the SWIM connector.
+
+If the application code uses Swim Disable and Reset pin as Output or has disabled SWIM Clock Divider:
+Try Now to SWITCH OFF and ON the application Power Supply while NRST Reset pin is forced low.
+
+< PROGRAM MEMORY programming failed.
+< Operation aborted.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Loading file E:\Users\Pal\DEVICES\FAT32\SOFT\fat32_4\Debug\fat32_4.s19 in PROGRAM MEMORY area  ...
+FILE : line 142: Address 0x4000 is out of range and is ignored!
+FILE : line 142: Address 0x4001 is out of range and is ignored!
+< File successfully loaded. File Checksum 0x6E528
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+----------------------------------------------------------
+new log session
+date:				02/23/12
+time:				00:44:51
+----------------------------------------------------------
+> Loading file E:\Users\Pal\DEVICES\FAT32\SOFT\fat32_4\Debug\fat32_4_opt.s19 in OPTION BYTE area  ...
+< File successfully loaded. File Checksum 0x2
+> Loading file E:\Users\Pal\DEVICES\FAT32\SOFT\fat32_4\Debug\fat32_4.s19 in PROGRAM MEMORY area  ...
+FILE : line 142: Address 0x4000 is out of range and is ignored!
+FILE : line 142: Address 0x4001 is out of range and is ignored!
+< File successfully loaded. File Checksum 0x6E528
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cannot communicate with the device !
+Check the SWIM cable connection and check all the needed pin connections on the SWIM connector.
+
+If the application code uses Swim Disable and Reset pin as Output or has disabled SWIM Clock Divider:
+Try Now to SWITCH OFF and ON the application Power Supply while NRST Reset pin is forced low.
+
+< PROGRAM MEMORY programming failed.
+< Operation aborted.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cannot communicate with the device !
+Check the SWIM cable connection and check all the needed pin connections on the SWIM connector.
+
+If the application code uses Swim Disable and Reset pin as Output or has disabled SWIM Clock Divider:
+Try Now to SWITCH OFF and ON the application Power Supply while NRST Reset pin is forced low.
+
+< PROGRAM MEMORY programming failed.
+< Operation aborted.
+> Programming  PROGRAM MEMORY area...
+Cannot communicate with the device !
+Check the SWIM cable connection and check all the needed pin connections on the SWIM connector.
+
+If the application code uses Swim Disable and Reset pin as Output or has disabled SWIM Clock Divider:
+Try Now to SWITCH OFF and ON the application Power Supply while NRST Reset pin is forced low.
+
+< PROGRAM MEMORY programming failed.
+< Operation aborted.
+> Programming  PROGRAM MEMORY area...
+Cannot communicate with the device !
+Check the SWIM cable connection and check all the needed pin connections on the SWIM connector.
+
+If the application code uses Swim Disable and Reset pin as Output or has disabled SWIM Clock Divider:
+Try Now to SWITCH OFF and ON the application Power Supply while NRST Reset pin is forced low.
+
+< PROGRAM MEMORY programming failed.
+< Operation aborted.
+> Programming  PROGRAM MEMORY area...
+Cannot communicate with the device !
+Check the SWIM cable connection and check all the needed pin connections on the SWIM connector.
+
+If the application code uses Swim Disable and Reset pin as Output or has disabled SWIM Clock Divider:
+Try Now to SWITCH OFF and ON the application Power Supply while NRST Reset pin is forced low.
+
+< PROGRAM MEMORY programming failed.
+< Operation aborted.
+> Programming  PROGRAM MEMORY area...
+Cannot communicate with the device !
+Check the SWIM cable connection and check all the needed pin connections on the SWIM connector.
+
+If the application code uses Swim Disable and Reset pin as Output or has disabled SWIM Clock Divider:
+Try Now to SWITCH OFF and ON the application Power Supply while NRST Reset pin is forced low.
+
+< PROGRAM MEMORY programming failed.
+< Operation aborted.
+> Programming  PROGRAM MEMORY area...
+Cannot communicate with the device !
+Check the SWIM cable connection and check all the needed pin connections on the SWIM connector.
+
+If the application code uses Swim Disable and Reset pin as Output or has disabled SWIM Clock Divider:
+Try Now to SWITCH OFF and ON the application Power Supply while NRST Reset pin is forced low.
+
+< PROGRAM MEMORY programming failed.
+< Operation aborted.
+> Programming  PROGRAM MEMORY area...
+Cannot communicate with the device !
+Check the SWIM cable connection and check all the needed pin connections on the SWIM connector.
+
+If the application code uses Swim Disable and Reset pin as Output or has disabled SWIM Clock Divider:
+Try Now to SWITCH OFF and ON the application Power Supply while NRST Reset pin is forced low.
+
+< PROGRAM MEMORY programming failed.
+< Operation aborted.
+> Programming  PROGRAM MEMORY area...
+Cannot communicate with the device !
+Check the SWIM cable connection and check all the needed pin connections on the SWIM connector.
+
+If the application code uses Swim Disable and Reset pin as Output or has disabled SWIM Clock Divider:
+Try Now to SWITCH OFF and ON the application Power Supply while NRST Reset pin is forced low.
+
+< PROGRAM MEMORY programming failed.
+< Operation aborted.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cannot communicate with the device !
+Check the SWIM cable connection and check all the needed pin connections on the SWIM connector.
+
+If the application code uses Swim Disable and Reset pin as Output or has disabled SWIM Clock Divider:
+Try Now to SWITCH OFF and ON the application Power Supply while NRST Reset pin is forced low.
+
+< PROGRAM MEMORY programming failed.
+< Operation aborted.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cannot communicate with the device !
+Check the SWIM cable connection and check all the needed pin connections on the SWIM connector.
+
+If the application code uses Swim Disable and Reset pin as Output or has disabled SWIM Clock Divider:
+Try Now to SWITCH OFF and ON the application Power Supply while NRST Reset pin is forced low.
+
+< PROGRAM MEMORY programming failed.
+< Operation aborted.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cannot communicate with the device !
+Check the SWIM cable connection and check all the needed pin connections on the SWIM connector.
+
+If the application code uses Swim Disable and Reset pin as Output or has disabled SWIM Clock Divider:
+Try Now to SWITCH OFF and ON the application Power Supply while NRST Reset pin is forced low.
+
+< PROGRAM MEMORY programming failed.
+< Operation aborted.
+> Programming  PROGRAM MEMORY area...
+Cannot communicate with the device !
+Check the SWIM cable connection and check all the needed pin connections on the SWIM connector.
+
+If the application code uses Swim Disable and Reset pin as Output or has disabled SWIM Clock Divider:
+Try Now to SWITCH OFF and ON the application Power Supply while NRST Reset pin is forced low.
+
+< PROGRAM MEMORY programming failed.
+< Operation aborted.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cannot communicate with the device !
+Check the SWIM cable connection and check all the needed pin connections on the SWIM connector.
+
+If the application code uses Swim Disable and Reset pin as Output or has disabled SWIM Clock Divider:
+Try Now to SWITCH OFF and ON the application Power Supply while NRST Reset pin is forced low.
+
+< PROGRAM MEMORY verifying failed.
+< Operation aborted.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cannot communicate with the device !
+Check the SWIM cable connection and check all the needed pin connections on the SWIM connector.
+
+If the application code uses Swim Disable and Reset pin as Output or has disabled SWIM Clock Divider:
+Try Now to SWITCH OFF and ON the application Power Supply while NRST Reset pin is forced low.
+
+< PROGRAM MEMORY programming failed.
+< Operation aborted.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.
+> Programming  PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY programming completed.
+> Verifying PROGRAM MEMORY area...
+Cut Version and Revision of device: 1.2
+< PROGRAM MEMORY successfully verified.
+> Programming  OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE programming completed.
+> Verifying OPTION BYTE area...
+Cut Version and Revision of device: 1.2
+< OPTION BYTE successfully verified.

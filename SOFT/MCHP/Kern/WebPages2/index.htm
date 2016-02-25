@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	~Site~
+	<meta http-equiv="Content-Language" content="ru">
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">		
+	<title>Настройка KO-5</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+	
+<body>		
+	<!--[if IE]>
+		<div align="center">
+			<h3>Настройка KO-5</h3>
+		</div>
+	<![endif]-->
+	<comment>
+	<div class="gradient" align="center">
+		<h1><span></span>Настройка KO-5</h1>
+	</div>
+	</comment>
+			
+<form method="post" action="index.htm" name="config">
+<table frame="border" align="left" width="100%"  cellpadding="10" border="3" rules="all">
+	<tr align="left" valign="baseline">
+	<td>
+		<h1>Установки Ethernet</h1>
+		<h2>	
+			<table width="100%" cellspacing="0" cellpadding="4" frame="void" rules="none">
+			    <tr> 
+					<td align="left" width="30%" nowrap>MAC адрес:</td>
+					<td><input type="text" name="mac" SIZE="15" maxlength="17" value="~config_mac~" ~macdis~></td>
+				</tr>
+				 
+				 <tr> 
+					<td align="left" width="30%" nowrap>Имя хоста:</td>
+					<td><input type="text" name="host" SIZE="15" maxlength="15" value="~config_hostname~" disabled></td>
+				 </tr>
+				
+				<tr> 
+					<td align="left" width="30%" nowrap>IP адрес:</td>
+					<td><input type="text" name="ip" SIZE="15" maxlength="15" value="~config_ip~"></td>
+				 </tr>
+				 <tr> 
+					<td align="left" width="30%" nowrap>Маска подсети:</td>
+					<td><input type="text" name="sub" SIZE="15" maxlength="15" value="~config_subnet~"></td>
+				 </tr>
+				 <tr> 
+					<td align="left" width="30%" nowrap>Шлюз:</td>
+					<td><input type="text" name="gw" SIZE="15" maxlength="15" value="~config_gw~"></td>
+				 </tr>
+				 <tr> 
+					<td></td>
+					<td><input type="submit" class="sm" value="Применить" style="margin-right: 17.5%"></td>
+				 </tr>
+			</table>
+		</h2>
+	</td>	
+	<td>
+		<h1>Информация</h1>
+		<h2>
+			<table width="100%" cellspacing="0" cellpadding="4" frame="void" rules="none">
+			<tr> 
+				<td align="left" width="30%" title="Был ли с момента подачи питания сброс IP адреса перемычкой на плате" nowrap>Сброс IP за текущую сессию:</td>
+				<td><input type="checkbox" name="ResetIpCheck" ~IsResetIp~ disabled></td>
+			 </tr>
+			 <tr> 
+				<td><align="left" title="IP адрес до сброса вручную" nowrap>Старый IP:</td>
+				<td><input type="text" name="OldIP" SIZE="15" maxlength="15" value="~OldIP~" disabled></td>		
+			 </tr>
+			 <tr> 
+				<td align="left" nowrap>Версия аппаратной части:</td>
+				<td><div class="examplebox code">~HardwareVer~</div></td>
+			 </tr>
+			 <tr> 
+				<td align="left" nowrap>Версия программного обеспечения:</td>
+				<td><div class="examplebox code">~SoftwareVer~</div></td>
+			 </tr>
+			 <tr> 
+				<td align="left" nowrap>Версия стека TCP/IP:</td>
+				<td><div class="examplebox code">~StackVer~</div></td>
+			 </tr>
+			<tr> 
+				<td align="left" nowrap>Тип MCU:</td>
+				<td><div class="examplebox code">~McuType~</div></td>
+			</tr>
+			</table>
+		</h2>
+	</td>
+	</tr>
+	
+	<tr align="left" valign="middle">
+		<td colspan="2">  		
+			<table width="100%" cellspacing="0" cellpadding="0" frame="void" rules="none">	
+				~setup~
+			</table>	
+		</td>
+	</tr>	
+	
+</table>
+</form>
+
+
+</body>
+</html>	

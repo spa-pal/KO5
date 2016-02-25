@@ -1,0 +1,711 @@
+
+IBEP-3U DEFINITIONS ::= BEGIN
+
+IMPORTS
+	enterprises, IpAddress
+		FROM RFC1155-SMI
+	OBJECT-TYPE
+		FROM RFC-1212
+	TRAP-TYPE
+		FROM RFC-1215
+	DisplayString
+		FROM RFC-1213;
+
+
+-- Системы ПромАвтоматики
+
+entSPA-SIB           OBJECT IDENTIFIER ::= { enterprises 33183 }
+ko-5                 OBJECT IDENTIFIER ::= { entSPA-SIB 30 }
+displayDeviceInfo    OBJECT IDENTIFIER ::= { ko-5 1 }
+dipslayEnergyMeter   OBJECT IDENTIFIER ::= { ko-5 2 }
+displayTemperature   OBJECT IDENTIFIER ::= { ko-5 3 }
+displayLogIn         OBJECT IDENTIFIER ::= { ko-5 4 }
+displaySpecials      OBJECT IDENTIFIER ::= { ko-5 5 }
+displayEnergyMeterImpuls  OBJECT IDENTIFIER ::= { ko-5 6 }
+displayEthernetSettings  OBJECT IDENTIFIER ::= { ko-5 7 }
+displaySNMPSettings  OBJECT IDENTIFIER ::= { ko-5 8 }
+displayWrkSettings   OBJECT IDENTIFIER ::= { ko-5 9 }
+displayHummidity     OBJECT IDENTIFIER ::= { ko-5 10 }
+
+displayDeviceSerial  OBJECT-TYPE
+	SYNTAX     INTEGER (0..65535)
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayDeviceInfo 1 }
+
+displayDeviceLocation  OBJECT-TYPE
+	SYNTAX     DisplayString (SIZE(69))
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayDeviceInfo 2 }
+
+displayDeviceInfoResetCounter  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayDeviceInfo 3 }
+
+dipslayTotalEnergy  OBJECT-TYPE
+	SYNTAX     INTEGER (0..65535)
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { dipslayEnergyMeter 1 }
+
+dipslayCurrentEnergy  OBJECT-TYPE
+	SYNTAX     INTEGER (0..65535)
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { dipslayEnergyMeter 2 }
+
+dipslayEnergyMeterAddress  OBJECT-TYPE
+	SYNTAX     INTEGER (0..65535)
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { dipslayEnergyMeter 3 }
+
+displayIntTemperature  OBJECT-TYPE
+	SYNTAX     INTEGER (0..65535)
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayTemperature 1 }
+
+displayIntTemperatureAlarm1Level  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayTemperature 2 }
+
+displayIntTemperatureAlarm1Logic  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayTemperature 3 }
+
+displayIntTemperatureAlarm1TrapSendAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayTemperature 4 }
+
+displayIntTemperatureAlarm1TrapSendNoAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayTemperature 5 }
+
+displayIntTemperatureAlarm1Status  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayTemperature 6 }
+
+displayIntTemperatureAlarm2Level  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayTemperature 7 }
+
+displayIntTemperatureAlarm2Logic  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayTemperature 8 }
+
+displayIntTemperatureAlarm2TrapSendAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayTemperature 9 }
+
+displayIntTemperatureAlarm2TrapSendNoAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayTemperature 10 }
+
+displayIntTemperatureAlarm2Status  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayTemperature 11 }
+
+displayExtTemperature  OBJECT-TYPE
+	SYNTAX     INTEGER (0..65535)
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayTemperature 12 }
+
+displayExtTemperatureAlarm1Level  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayTemperature 13 }
+
+displayExtTemperatureAlarm1Logic  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayTemperature 14 }
+
+displayExtTemperatureAlarm1TrapSendAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayTemperature 15 }
+
+displayExtTemperatureAlarm1TrapSendNoAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayTemperature 16 }
+
+displayExtTemperatureAlarm1Status  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayTemperature 17 }
+
+displayExtTemperatureAlarm2Level  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayTemperature 18 }
+
+displayExtTemperatureAlarm2Logic  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayTemperature 19 }
+
+displayExtTemperatureAlarm2TrapSendAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayTemperature 20 }
+
+displayExtTemperatureAlarm2TrapSendNoAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayTemperature 21 }
+
+displayExtTemperatureAlarm2Status  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayTemperature 22 }	
+
+displayLogIn1  OBJECT-TYPE
+	SYNTAX     INTEGER (0..65535)
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayLogIn 1 }
+
+displayLogIn2  OBJECT-TYPE
+	SYNTAX     INTEGER (0..65535)
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayLogIn 2 }
+
+displayLogIn3  OBJECT-TYPE
+	SYNTAX     INTEGER (0..65535)
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayLogIn 3 }
+
+displayLogIn4  OBJECT-TYPE
+	SYNTAX     INTEGER (0..65535)
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayLogIn 4 }
+
+displayLogIn5  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayLogIn 5 }
+
+displayLogIn6  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayLogIn 6 }
+
+displayLogIn1Av  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayLogIn 7 }
+
+displayLogIn2Av  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayLogIn 8 }
+
+displayLogIn3Av  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayLogIn 9 }
+
+displayLogIn4Av  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayLogIn 10 }
+
+displayLogIn5Av  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayLogIn 11 }
+
+displayLogIn6Av  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayLogIn 12 }
+
+displaySpecialsTrapMessage  OBJECT-TYPE
+	SYNTAX     DisplayString (SIZE(64))
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displaySpecials 1 }
+
+displaySpecialsTrapValue0  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displaySpecials 2 }
+
+displaySpecialsTrapValue1  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displaySpecials 3 }
+
+displaySpecialsTrapValue2  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displaySpecials 4 }
+
+command  OBJECT-TYPE
+	SYNTAX     OCTET STRING
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displaySpecials 5 }
+
+displayImpulseEnergyMeter  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayEnergyMeterImpuls 1 }
+
+displayImpulsEnergyMeterTotalEnergy  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayEnergyMeterImpuls 2 }
+
+displayImpulsEnergyMeterImpulsPerKwth  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayEnergyMeterImpuls 3 }
+
+displayEthernetSettingsIPAddress  OBJECT-TYPE
+	SYNTAX     IpAddress
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayEthernetSettings 1 }
+
+displayEthernetSettingsNetMask  OBJECT-TYPE
+	SYNTAX     IpAddress
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayEthernetSettings 2 }
+
+displayEthernetSettingsDefGatw  OBJECT-TYPE
+	SYNTAX     IpAddress
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayEthernetSettings 3 }
+
+displaySNMPSettingsReadPort  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displaySNMPSettings 1 }
+
+displaySNMPSettingsWritePort  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displaySNMPSettings 2 }
+
+displaySNMPSettingsReadCommunity  OBJECT-TYPE
+	SYNTAX     OCTET STRING
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displaySNMPSettings 3 }
+
+displaySNMPSettingsWriteCommunity  OBJECT-TYPE
+	SYNTAX     OCTET STRING
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displaySNMPSettings 4 }
+
+displaySNMPSettingsTrapServer1  OBJECT-TYPE
+	SYNTAX     IpAddress
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displaySNMPSettings 5 }
+
+displaySNMPSettingsTrapServer2  OBJECT-TYPE
+	SYNTAX     IpAddress
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displaySNMPSettings 6 }
+
+displaySNMPSettingsTrapServer3  OBJECT-TYPE
+	SYNTAX     IpAddress
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displaySNMPSettings 7 }
+
+displaySNMPSettingsTrapServer4  OBJECT-TYPE
+	SYNTAX     IpAddress
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displaySNMPSettings 8 }
+
+displaySNMPSettingsTrapServer5  OBJECT-TYPE
+	SYNTAX     IpAddress
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displaySNMPSettings 9 }
+
+displayLogIn1StatOfAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayWrkSettings 1 }
+
+displayLogIn2StatOfAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayWrkSettings 2 }
+
+displayLogIn3StatOfAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayWrkSettings 3 }
+
+displayLogIn4StatOfAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayWrkSettings 4 }
+
+displayLogIn5StatOfAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayWrkSettings 5 }
+
+displayLogIn6StatOfAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayWrkSettings 6 }
+
+displayLogIn1TrapSendOfAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayWrkSettings 7 }
+
+displayLogIn2TrapSendOfAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayWrkSettings 8 }
+
+displayLogIn3TrapSendOfAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayWrkSettings 9 }
+
+displayLogIn4TrapSendOfAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayWrkSettings 10 }
+
+displayLogIn5TrapSendOfAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayWrkSettings 11 }
+
+displayLogIn6TrapSendOfAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayWrkSettings 12 }
+
+displayLogIn1TrapSendOfNoAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayWrkSettings 13 }
+
+displayLogIn2TrapSendOfNoAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayWrkSettings 14 }
+
+displayLogIn3TrapSendOfNoAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayWrkSettings 15 }
+
+displayLogIn4TrapSendOfNoAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayWrkSettings 16 }
+
+displayLogIn5TrapSendOfNoAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayWrkSettings 17 }
+
+displayLogIn6TrapSendOfNoAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayWrkSettings 18 }
+
+displayHummiditySensor  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayHummidity 1 }
+
+displayAlarmHummidityLevel  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayHummidity 2 }
+
+displayAlarmHummidityLogic  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayHummidity 3 }
+
+displayAlarmHummidityStatus  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-only
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayHummidity 4 }
+
+displayAlarmHummidityTrapSendAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayHummidity 5 }
+
+displayAlarmHummidityTrapSendNoAv  OBJECT-TYPE
+	SYNTAX     INTEGER
+	ACCESS     read-write
+	STATUS     mandatory
+	DESCRIPTION 
+		""
+	::= { displayHummidity 6 }
+
+alarmTrap  TRAP-TYPE
+	ENTERPRISE entSPA-SIB
+	DESCRIPTION 
+		""
+	::= 3
+END
+
+
+-- This MIB was created using NuDesign Team's Visual MIBuilder (Ver 4.7).
+
